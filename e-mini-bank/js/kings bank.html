@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Bank</title>
+    <link rel="stylesheet" href="bank.css">
+    <script src="https://cdn.tailwindcss.com"></script></head>
+<body class="bg-blue-200">
+    <h1 class=" text-5xl text-center mt-6 font-semibold text-red-600"> Let's Have Some <span class ="font-semibold text-violet-600"> Money!!!! </span> </h1>
+
+    <section class="mt-12">
+        <div class=" grid grid-cols-3 gap-6	w-9/12 mx-auto text-white ">
+            <div class=" bg-orange-400 p-8 rounded-2xl "><h4 class="text-3xl">Deposite</h4>
+                <h1 class="text-5xl">$<span id="deposite-total">00</span></h1>
+            </div>
+            <div class=" bg-yellow-400 p-8 rounded-2xl "><h4 class="text-3xl">Withdraw</h4>
+                <h1 class="text-5xl">$<span id="withdraw-total">00</span> </h1>
+            </div>
+        
+            <div class=" bg-blue-400 p-8 rounded-2xl "><h4 class="text-3xl">Balance</h4>
+                <h1 class="text-5xl">$<span id="balance-total">1250</span></h1>
+            </div>
+          
+        </div>
+
+    </section>
+
+    <section class="mt-12">
+        <div class=" grid grid-cols-2 gap-6	w-9/12 mx-auto text-white ">
+            <div class=" bg-indigo-400 p-8 rounded-2xl "><h4 class="text-3xl">Please Deposite</h4>
+                <input class="text-black w-9/12 block px-3 mb-4 mt-6 rounded-xl" type="email" name="" id="deposite-field" placeholder="$ Please enter the amount to deposite">
+                <button id="btn-deposite" class="bg-green-400 px-8 rounded-xl hover:bg-sky-700  py-2 text-white font-medium" >Deposite</button>
+            </div>
+            <div class=" bg-green-400 p-8 rounded-2xl ">
+                <h4 class="text-3xl">Withdraw</h4>
+                <input  id="withdraw-field" class=" text-black w-9/12 block px-3 mt-6 mb-4 rounded-xl " type="email" name=""  placeholder="$ Please Enter the amount to withdraw">
+                <button id="btn-withdraw" class="bg-red-600 px-8 rounded-xl hover:bg-sky-700  py-2 text-white font-medium" >Withdraw</button>
+            </div>
+    </section>
+    
+    <section class= " mt-6 flex items-center justify-center">
+    <a href="http://127.0.0.1:5500/html/index.html" class="previous">&laquo; Previous</a>
+    <a href="#" class="next">Next &raquo;</a>
+    </section>
+
+
+    <script src="deposite.js"></script>
+    <script src="withdraw.js"></script>
+</body>
+</html>
